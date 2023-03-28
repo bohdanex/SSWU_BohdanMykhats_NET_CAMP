@@ -1,0 +1,15 @@
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\bin\Debug\net6.0\FindCutInCube.exe
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\bin\Debug\net6.0\FindCutInCube.deps.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\bin\Debug\net6.0\FindCutInCube.runtimeconfig.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\bin\Debug\net6.0\FindCutInCube.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\bin\Debug\net6.0\FindCutInCube.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.csproj.AssemblyReference.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.AssemblyInfoInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.AssemblyInfo.cs
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.csproj.CoreCompileInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\refint\FindCutInCube.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\FindCutInCube.genruntimeconfig.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\FindCutInCube\obj\Debug\net6.0\ref\FindCutInCube.dll
