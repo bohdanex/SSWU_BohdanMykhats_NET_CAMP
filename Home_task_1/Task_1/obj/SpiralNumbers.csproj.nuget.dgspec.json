@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\SpiralNumbers\\SpiralNumbers.csproj": {}
+    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_1\\SpiralNumbers.csproj": {}
   },
   "projects": {
-    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\SpiralNumbers\\SpiralNumbers.csproj": {
+    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_1\\SpiralNumbers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\SpiralNumbers\\SpiralNumbers.csproj",
+        "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_1\\SpiralNumbers.csproj",
         "projectName": "SpiralNumbers",
-        "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\SpiralNumbers\\SpiralNumbers.csproj",
+        "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_1\\SpiralNumbers.csproj",
         "packagesPath": "C:\\Users\\bodat\\.nuget\\packages\\",
-        "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\SpiralNumbers\\obj\\",
+        "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bodat\\AppData\\Roaming\\NuGet\\NuGet.Config",
