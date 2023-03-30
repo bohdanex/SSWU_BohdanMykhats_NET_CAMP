@@ -57,6 +57,7 @@ namespace SpiralNumbers
         public override string ToString()
         {
             StringBuilder spiralOutput = new();
+            // Тут немає бути роздруку
             Console.WriteLine($"Matrix size: {this._matrix.GetLength(0)}x{this._matrix.GetLength(1)}");
             for (int i = 0; i < _matrix.GetLength(1); ++i)
             {
