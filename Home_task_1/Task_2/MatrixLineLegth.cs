@@ -3,7 +3,7 @@
 namespace LongestHorizontalLine
 {
     public class MatrixLineLength
-    {
+    {// Цікавий тип. 
         private HalfByte[,] _matrix;
 
         public MatrixLineLength(int sizeX = 0, int sizeY = 0)
@@ -12,7 +12,7 @@ namespace LongestHorizontalLine
         }
 
         public void SetMockMatrix()
-        {
+        {// Хард код не вітається!
             _matrix = new HalfByte[,]
             {
                 {2,1,2,2,2,2 },
@@ -33,7 +33,7 @@ namespace LongestHorizontalLine
                 }
             }
         }
-
+// Тут молодець!
         public int FindLongestLine(out HalfByte colour, out int[] lengthRange, out int yPointPosition)
         {
             //Output
