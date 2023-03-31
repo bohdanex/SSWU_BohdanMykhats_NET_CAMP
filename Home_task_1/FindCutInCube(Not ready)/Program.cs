@@ -15,8 +15,8 @@ namespace FindCutInCube
     public class CutInCube
     {
         private bool[,,] _cube;
-        private bool diag1 = false;
-        private bool diag2 = false;
+        private bool notDiag1 = false;
+        private bool notDiag2 = false;
 
         public CutInCube()
         {
@@ -82,25 +82,25 @@ namespace FindCutInCube
             int[] startCoordinates = new int[3];
             for (int z = 0; z < cubeIndexLength; ++z)
             {
-                diag1 = false;
-                diag2 = false;
+                notDiag1 = false;
+                notDiag2 = false;
                 for(int xy = 0; xy < cubeIndexLength; ++xy)
                 {
-                    diag1 |= _cube[z, xy, xy] ;
-                    diag2 |= _cube[z, cubeIndexLength - xy, xy];
+                    notDiag1 |= _cube[z, xy, xy] ;
+                    notDiag2 |= _cube[z, cubeIndexLength - xy, xy];
                     //break the loop if 1 (condition = false) exists at one of diaglonales
-                    if (diag2 && diag1) break;
+                    if (notDiag2 && notDiag1) break;
                 }
-                if (!(diag1 & diag2))
+                if (!(notDiag1 & notDiag2))
                 {
                     //Here we make sure, these values are different to correct output
-                    diag1 ^= !diag2;
+                    notDiag1 ^= !notDiag2;
                     startCoordinates[0] = z;
-                    startCoordinates[1] = cubeIndexLength * Convert.ToInt32(diag1);
-                    startCoordinates[2] = cubeIndexLength * Convert.ToInt32(diag1);
+                    startCoordinates[1] = cubeIndexLength * Convert.ToInt32(notDiag1);
+                    startCoordinates[2] = cubeIndexLength * Convert.ToInt32(notDiag1);
                     endCoordinates[0] = z;
-                    endCoordinates[1] = cubeIndexLength * Convert.ToInt32(diag2);
-                    endCoordinates[2] = cubeIndexLength * Convert.ToInt32(diag2);
+                    endCoordinates[1] = cubeIndexLength * Convert.ToInt32(notDiag2);
+                    endCoordinates[2] = cubeIndexLength * Convert.ToInt32(notDiag2);
                     break;
                 }
             }

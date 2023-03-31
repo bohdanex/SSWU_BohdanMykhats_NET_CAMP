@@ -1,0 +1,15 @@
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\bin\Debug\net6.0\Tensor.exe
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\bin\Debug\net6.0\Tensor.deps.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\bin\Debug\net6.0\Tensor.runtimeconfig.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\bin\Debug\net6.0\Tensor.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\bin\Debug\net6.0\Tensor.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.csproj.AssemblyReference.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.AssemblyInfoInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.AssemblyInfo.cs
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.csproj.CoreCompileInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\refint\Tensor.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\Tensor.genruntimeconfig.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_1\Tensor(Not ready)\obj\Debug\net6.0\ref\Tensor.dll

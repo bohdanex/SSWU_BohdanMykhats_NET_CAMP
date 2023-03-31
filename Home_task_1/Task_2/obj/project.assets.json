@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\LongestHorizontalLine\\LongestHorizontalLine.csproj",
+      "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_2\\LongestHorizontalLine.csproj",
       "projectName": "LongestHorizontalLine",
-      "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\LongestHorizontalLine\\LongestHorizontalLine.csproj",
+      "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_2\\LongestHorizontalLine.csproj",
       "packagesPath": "C:\\Users\\bodat\\.nuget\\packages\\",
-      "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\LongestHorizontalLine\\obj\\",
+      "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bodat\\AppData\\Roaming\\NuGet\\NuGet.Config",
