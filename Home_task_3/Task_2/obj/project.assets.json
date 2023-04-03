@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_4\\Tensor.csproj",
-      "projectName": "Tensor",
-      "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_4\\Tensor.csproj",
+      "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_3\\Task_2\\WorkWithStrings.csproj",
+      "projectName": "WorkWithStrings",
+      "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_3\\Task_2\\WorkWithStrings.csproj",
       "packagesPath": "C:\\Users\\bodat\\.nuget\\packages\\",
-      "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_1\\Task_4\\obj\\",
+      "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_3\\Task_2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bodat\\AppData\\Roaming\\NuGet\\NuGet.Config",

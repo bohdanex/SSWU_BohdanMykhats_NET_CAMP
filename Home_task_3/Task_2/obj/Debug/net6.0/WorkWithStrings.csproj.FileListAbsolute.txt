@@ -1,0 +1,15 @@
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\bin\Debug\net6.0\WorkWithStrings.exe
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\bin\Debug\net6.0\WorkWithStrings.deps.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\bin\Debug\net6.0\WorkWithStrings.runtimeconfig.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\bin\Debug\net6.0\WorkWithStrings.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\bin\Debug\net6.0\WorkWithStrings.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.csproj.AssemblyReference.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.AssemblyInfoInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.AssemblyInfo.cs
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.csproj.CoreCompileInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\refint\WorkWithStrings.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\WorkWithStrings.genruntimeconfig.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_3\Task_2\WorkWithStrings\obj\Debug\net6.0\ref\WorkWithStrings.dll
