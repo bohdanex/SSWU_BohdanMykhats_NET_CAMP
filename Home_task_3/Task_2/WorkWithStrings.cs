@@ -1,4 +1,6 @@
-﻿namespace WorkWithStrings
+﻿using System.Runtime.CompilerServices;
+
+namespace WorkWithStrings
 {
     public class WorkWithStrings
     {
@@ -57,25 +59,42 @@
 
         public static string ReplaceRepeatingCharacters(string text, string replaceWith)
         {
-            char[] splitChars = { ' ', ',', '.', '!', '?' };
-            string[] textToFind = text.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
+            int firstLetterOfWordIndex = char.IsLetter(text[0]) ? 0 : -1;
+            string outputText = (string)text.Clone();
+            bool isDoubleLetter = false;
 
-            for(int wordIndex = 0; wordIndex < textToFind.Length; ++wordIndex)
+            for(int letterIndex = 1; letterIndex < outputText.Length; ++letterIndex)
             {
-                string currentWord = textToFind[wordIndex];
-
-                for (int letterIndex = 1; letterIndex < currentWord.Length; ++letterIndex)
+                if (char.IsLetter(outputText[letterIndex]))
                 {
-                    if (currentWord[letterIndex] == currentWord[letterIndex - 1])
+                    if (outputText[letterIndex] == outputText[letterIndex - 1])
                     {
-                        textToFind[wordIndex] = replaceWith;
-                        break;
+                        isDoubleLetter = true;
+                    }
+                    if (firstLetterOfWordIndex == -1)
+                    {
+                        firstLetterOfWordIndex = letterIndex;
                     }
                 }
-            }
 
-            string output = string.Join(" ", textToFind);
-            return output;
+                //Дублювання літер може відбутися у кінці рядка
+                if (char.IsPunctuation(outputText[letterIndex]) || char.IsWhiteSpace(outputText[letterIndex]) 
+                    || letterIndex == outputText.Length-1)
+                {
+                    if(firstLetterOfWordIndex != -1 && isDoubleLetter)
+                    {
+                        outputText = outputText.Remove(firstLetterOfWordIndex, 
+                            letterIndex - firstLetterOfWordIndex + Convert.ToInt32(letterIndex == outputText.Length - 1));
+
+                        outputText = outputText.Insert(firstLetterOfWordIndex, replaceWith);
+                        letterIndex = firstLetterOfWordIndex + replaceWith.Length;
+                    }
+                    isDoubleLetter = false;
+                    firstLetterOfWordIndex = -1;
+                    continue;
+                }
+            }
+            return outputText;
         }
 
         public override string ToString()

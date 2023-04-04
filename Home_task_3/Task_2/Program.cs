@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Example of method ReplaceRepeatingCharacters. Given a text:" +
+                "\n\"aaaaa. ,   kkoas, sad    lk.asdddd\", replace with: \"TestString\"");
+            Console.WriteLine("Result: " + WorkWithStrings.ReplaceRepeatingCharacters("aaaaa. ,   kkoas, sad    lk.asdddd", "TestString"));
+
             while (true)
             {
                 int? secondOccurence= null;

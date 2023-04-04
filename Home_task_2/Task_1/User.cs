@@ -2,23 +2,14 @@
 {
     public class User
     {
-        private double _consumptionPerHour;
-
         //Цей ідентифікатор квартири може знадобитися у майбутньому
         public int AparementId { get; }
         //споживання води за одну годину. Цей стан залежить від самої людини
-        public double ConsumptionPerHour 
-        {
-            get => _consumptionPerHour;
-            private set
-            {
-                _consumptionPerHour= Validator.MinValue(0, value, Simulator.MaxWaterConsumption);
-            }
-        }
+        public double ConsumptionPerHour { get; private set; }
 
         public User(double waterConsumption, int aparementId)
         {
-            ConsumptionPerHour = waterConsumption;
+            ConsumptionPerHour = Validator.MinValue(0, waterConsumption, Simulator.MaxWaterConsumption);
             AparementId = aparementId;
         }
 
