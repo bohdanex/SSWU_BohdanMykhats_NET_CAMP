@@ -16,9 +16,11 @@
             _users = users;
             MaxWaterConsumption = Validator.MinValue(0.5, maxWaterConsumption);
         }
-
+// 
         public void Simulate() { }
+        // а чому не властивість? І чому приватний метод?
         private void ChangeWaterTower(WaterTower waterTower) { }
+        
         private void AddUser(int apartmentId, User user) { }
         private void RemoveUser(int apartmentId) { }
 
