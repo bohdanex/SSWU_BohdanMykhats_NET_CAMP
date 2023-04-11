@@ -1,7 +1,7 @@
 ﻿namespace WorkWithStrings
 {
     internal class Program
-    {
+    {// А чи не перевантажений Ваш Main?!!!
         static void Main(string[] args)
         {
             Console.WriteLine("Example of method ReplaceRepeatingCharacters. Given a text:" +
