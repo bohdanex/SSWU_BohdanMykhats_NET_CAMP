@@ -58,7 +58,7 @@ namespace WorkWithStrings
         }
 
         public static string ReplaceRepeatingCharacters(string text, string replaceWith)
-        {
+        {// складно. Можна простіше...
             int firstLetterOfWordIndex = char.IsLetter(text[0]) ? 0 : -1;
             string outputText = (string)text.Clone();
             bool isDoubleLetter = false;
