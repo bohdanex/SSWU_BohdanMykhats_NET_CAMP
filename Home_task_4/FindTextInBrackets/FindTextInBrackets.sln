@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindTextInBrackets", "FindTextInBrackets.csproj", "{3B6C1C68-26FC-4CC5-9BCE-A9E8A99E9E6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B6C1C68-26FC-4CC5-9BCE-A9E8A99E9E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B6C1C68-26FC-4CC5-9BCE-A9E8A99E9E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B6C1C68-26FC-4CC5-9BCE-A9E8A99E9E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B6C1C68-26FC-4CC5-9BCE-A9E8A99E9E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32280EC4-BCAF-4BC9-92CB-6BC41B6B00AB}
+	EndGlobalSection
+EndGlobal

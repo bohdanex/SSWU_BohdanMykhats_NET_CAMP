@@ -1,0 +1,15 @@
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\bin\Debug\net6.0\FindTextInBrackets.exe
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\bin\Debug\net6.0\FindTextInBrackets.deps.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\bin\Debug\net6.0\FindTextInBrackets.runtimeconfig.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\bin\Debug\net6.0\FindTextInBrackets.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\bin\Debug\net6.0\FindTextInBrackets.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.csproj.AssemblyReference.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.AssemblyInfoInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.AssemblyInfo.cs
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.csproj.CoreCompileInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\refint\FindTextInBrackets.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\FindTextInBrackets.genruntimeconfig.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_4\FindTextInBrackets\obj\Debug\net6.0\ref\FindTextInBrackets.dll
