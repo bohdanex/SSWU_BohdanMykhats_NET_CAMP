@@ -4,17 +4,28 @@ namespace Task3
 {
     public class SentenceExtractor
     {
+        private string _text;
+
         public string[] MatchResult { get; private set; }
 
-        public string Text { get; set; }
+        public string Text 
+        {
+            get => _text;
+            set
+            {
+                _text = value;
+                FindSentenceInParenthesis();
+            } 
+        }
 
         public SentenceExtractor(string text)
         {
+            _text = string.Empty;
+            MatchResult = Array.Empty<string>();
             Text = text;
-            MatchResult= Array.Empty<string>();
         }
 
-        public void FindSentenceInParenthesis()
+        private void FindSentenceInParenthesis()
         {
             MatchResult = FindSentenceInParenthesis(Text);
         }
@@ -23,7 +34,7 @@ namespace Task3
         {
             const string punctuationMarks = ".?!";
             List<int> occuredSentanceInBracketsIndeces = new();
-            Dictionary<char,char> bracketPairs = new()
+            Dictionary<char, char> bracketPairs = new()
             {
                 {'(', ')'},
                 {'{', '}'},
@@ -32,17 +43,17 @@ namespace Task3
             };
             string[] textSplitted = SplitBySymbols(text, punctuationMarks);
 
-            for(int sentenceIndex = 0; sentenceIndex < textSplitted.Length && textSplitted.Length > 2; ++sentenceIndex)
+            for (int sentenceIndex = 0; sentenceIndex < textSplitted.Length && textSplitted.Length > 2; ++sentenceIndex)
             {
                 string currentSentence = textSplitted[sentenceIndex];
                 for (int charIndex = 0; charIndex < currentSentence.Length; ++charIndex)
                 {
                     foreach (char bracketAsKey in bracketPairs.Keys)
                     {
-                        if(bracketAsKey.Equals(currentSentence[charIndex]))
+                        if (bracketAsKey.Equals(currentSentence[charIndex]))
                         {
                             //зміщення на дві позиції, бо дужки без вмісту не задовільняють умову
-                            for(int i = charIndex + 2; i < currentSentence.Length; ++i)
+                            for (int i = charIndex + 2; i < currentSentence.Length; ++i)
                             {
                                 if (currentSentence[i].Equals(bracketPairs[bracketAsKey]))
                                 {
@@ -55,7 +66,7 @@ namespace Task3
                         }
                     }
                 }
-            nextSentence: ;
+            nextSentence:;
             }
 
             string[] resultSentences = new string[occuredSentanceInBracketsIndeces.Count];
@@ -83,7 +94,7 @@ namespace Task3
             string[] splitResult = new string[charIndexPositions.Count];
 
             int lastIndex = 0;
-            for(int i = 0; i < charIndexPositions.Count; ++i)
+            for (int i = 0; i < charIndexPositions.Count; ++i)
             {
                 splitResult[i] = text[lastIndex..(charIndexPositions[i] + 1)];
                 lastIndex = charIndexPositions[i] + 1;

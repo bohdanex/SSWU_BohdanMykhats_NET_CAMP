@@ -4,16 +4,16 @@ namespace HomeTask4
 {
     public class EmailAnalyzer
     {
-        private string[] _correctEmails;
-        private string[] _incorrectEmails;
+        public string[] CorrectEmails { get; private set; }
+        public string[] IncorrectEmails { get; private set; }
 
         public string Text { get; set; }
         
         public EmailAnalyzer(string text = "\0")
         {
             Text= text;
-            _correctEmails= new string[0];
-            _incorrectEmails= new string[0];
+            CorrectEmails= new string[0];
+            IncorrectEmails= new string[0];
         }
 
         public void VerifyEmailAddress()
@@ -51,8 +51,8 @@ namespace HomeTask4
                 }
             }
 
-            this._correctEmails = correctEmails.ToArray();
-            this._incorrectEmails = incorrectEmails.ToArray();
+            this.CorrectEmails = correctEmails.ToArray();
+            this.IncorrectEmails = incorrectEmails.ToArray();
         }
 
         private static bool IsASCII(string email)
@@ -289,14 +289,14 @@ namespace HomeTask4
         {
             StringBuilder outputString = new($"All emails\n{Text}\n\nCorrect emails\n");
 
-            foreach (string email in _correctEmails)
+            foreach (string email in CorrectEmails)
             {
                 outputString.AppendLine(" " + email);
             }
 
             outputString.AppendLine("\nIncorrect emails");
 
-            foreach (string email in _incorrectEmails)
+            foreach (string email in IncorrectEmails)
             {
                 outputString.AppendLine(" " + email);
             }

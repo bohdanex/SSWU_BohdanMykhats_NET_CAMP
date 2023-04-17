@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\FindTextInBrackets\\FindTextInBrackets.csproj",
-      "projectName": "FindTextInBrackets",
-      "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\FindTextInBrackets\\FindTextInBrackets.csproj",
+      "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_1\\Task_1.csproj",
+      "projectName": "Task_1",
+      "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_1\\Task_1.csproj",
       "packagesPath": "C:\\Users\\bodat\\.nuget\\packages\\",
-      "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\FindTextInBrackets\\obj\\",
+      "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bodat\\AppData\\Roaming\\NuGet\\NuGet.Config",

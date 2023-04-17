@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\EmailAnalyzer\\EmailAnalyzer.csproj": {}
+    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_2\\EmailAnalyzer.csproj": {}
   },
   "projects": {
-    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\EmailAnalyzer\\EmailAnalyzer.csproj": {
+    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_2\\EmailAnalyzer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\EmailAnalyzer\\EmailAnalyzer.csproj",
+        "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_2\\EmailAnalyzer.csproj",
         "projectName": "EmailAnalyzer",
-        "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\EmailAnalyzer\\EmailAnalyzer.csproj",
+        "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_2\\EmailAnalyzer.csproj",
         "packagesPath": "C:\\Users\\bodat\\.nuget\\packages\\",
-        "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\EmailAnalyzer\\obj\\",
+        "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_4\\Task_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bodat\\AppData\\Roaming\\NuGet\\NuGet.Config",
