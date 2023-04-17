@@ -1,0 +1,16 @@
+ApartmentCount, Quarter, PricePerKilowatt
+13, 1, 0.3
+{ApartmentNumber, Address, Surname, Deposit, InputElectricityDisplay, OutputElectricityDisplay, EachMonthConsumptionIndicator}
+{12,Andriya Lepkoho 12/3,Artemov,123.6,1100,1512, 2018.01.28, 2018.02.28, 2018.03.29 },
+{4,L.Ukrainki124,Kobalt,240.3,2211,3012,2018.01.25,2018.02.26,2018.03.26},
+{3,T.Shevchenka119,Nazarenko,33.6,100,212,2018.01.27,2018.02.28,2018.03.27},
+{12,AndriyaLepkoho122,Petruk,0,300,300,2018.01.29,2018.02.28,2018.03.29},
+{6,AndriyaLepkoho43/2,Petrenko,643.5,12321,15466,2018.01.19,2018.02.20,2018.03.30},
+{1,AndriyaLepkoho43/4,Voytovych,633.3,1222,3333,2018.01.09,2018.02.28,2018.03.29},
+{3,T.Shevchenka89,Gerba,3600,3000,15000,2018.01.29,2018.02.28,2018.03.29},
+{15,AndriyaLepkoho112,Kibri,3,1,40,2018.01.09,2018.02.28,2018.03.29},
+{22,V.Stusa499/9,Plov,90.3,1211,1512,2018.01.09,2018.02.28,2018.03.29},
+{1,V.Stusa11,Ziks,90.3,1211,1512,2018.01.19,2018.02.27,2018.03.27},
+{4,V.Stusa1,Rerka,90.3,1211,1512,2018.01.29,2018.02.28,2018.03.29},
+{16,V.Stusa14,Kokov,0,1512,1512,2018.01.17,2018.02.26,2018.03.25},
+{19,L.Ukrainki9,Ilnych,90.3,1211,1512,2018.01.19,2018.02.24,2018.03.30},

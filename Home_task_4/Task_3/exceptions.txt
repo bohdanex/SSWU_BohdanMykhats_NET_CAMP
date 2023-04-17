@@ -1,0 +1,7 @@
+ElectricityUsageInfo:
+	methods: PrintByApartment, ZeroConsumptionApartment, GetMostArrearUser, ToString
+
+TxtParser:
+	methods: Parse
+
+Validator class

@@ -1,0 +1,124 @@
+﻿{
+  "ApartmentCount": 13,
+  "QuarterNumber": 1,
+  "Users": [
+    {
+      "ApartmentNumber": 12,
+      "Address": "Andriya Lepkoho 12/3",
+      "Surname": "Artemov",
+      "Deposit": 123.6,
+      "InputElectricityDisplay": 1100,
+      "OutputElectricityDisplay": 1512,
+      "ConsumptionIndicators": [ "2018-01-28T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 4,
+      "Address": "L. Ukrainki 12 4",
+      "Surname": "Kobalt",
+      "Deposit": 240.3,
+      "InputElectricityDisplay": 2211,
+      "OutputElectricityDisplay": 3012,
+      "ConsumptionIndicators": [ "2018-01-25T00:00:00", "2018-02-26T00:00:00", "2018-03-26T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 3,
+      "Address": "T. Shevchenka 1 19",
+      "Surname": "Nazarenko",
+      "Deposit": 33.6,
+      "InputElectricityDisplay": 100,
+      "OutputElectricityDisplay": 212,
+      "ConsumptionIndicators": [ "2018-01-27T00:00:00", "2018-02-28T00:00:00", "2018-03-27T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 12,
+      "Address": "Andriya Lepkoho 122",
+      "Surname": "Petruk",
+      "Deposit": 0,
+      "InputElectricityDisplay": 300,
+      "OutputElectricityDisplay": 300,
+      "ConsumptionIndicators": [ "2018-01-29T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 6,
+      "Address": "Andriya Lepkoho 43/2",
+      "Surname": "Petrenko",
+      "Deposit": 643.5,
+      "InputElectricityDisplay": 12321,
+      "OutputElectricityDisplay": 15466,
+      "ConsumptionIndicators": [ "2018-01-19T00:00:00", "2018-02-20T00:00:00", "2018-03-30T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 1,
+      "Address": "Andriya Lepkoho 43/4",
+      "Surname": "Voytovych",
+      "Deposit": 633.3,
+      "InputElectricityDisplay": 1222,
+      "OutputElectricityDisplay": 3333,
+      "ConsumptionIndicators": [ "2018-01-09T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 3,
+      "Address": "T.Shevchenka 89",
+      "Surname": "Gerba",
+      "Deposit": 3600,
+      "InputElectricityDisplay": 3000,
+      "OutputElectricityDisplay": 15000,
+      "ConsumptionIndicators": [ "2018-01-29T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 15,
+      "Address": "Andriya Lepkoho 112",
+      "Surname": "Kibri",
+      "Deposit": 3,
+      "InputElectricityDisplay": 1,
+      "OutputElectricityDisplay": 40,
+      "ConsumptionIndicators": [ "2018-01-09T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 22,
+      "Address": "V. Stusa 4 99/9",
+      "Surname": "Plov",
+      "Deposit": 90.3,
+      "InputElectricityDisplay": 1211,
+      "OutputElectricityDisplay": 1512,
+      "ConsumptionIndicators": [ "2018-01-09T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 1,
+      "Address": "V. Stusa 11",
+      "Surname": "Ziks",
+      "Deposit": 90.3,
+      "InputElectricityDisplay": 1211,
+      "OutputElectricityDisplay": 1512,
+      "ConsumptionIndicators": [ "2018-01-19T00:00:00", "2018-02-27T00:00:00", "2018-03-27T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 4,
+      "Address": "V. Stusa 1",
+      "Surname": "Rerka",
+      "Deposit": 90.3,
+      "InputElectricityDisplay": 1211,
+      "OutputElectricityDisplay": 1512,
+      "ConsumptionIndicators": [ "2018-01-29T00:00:00", "2018-02-28T00:00:00", "2018-03-29T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 16,
+      "Address": "V. Stusa 14",
+      "Surname": "Kokov",
+      "Deposit": 0,
+      "InputElectricityDisplay": 1512,
+      "OutputElectricityDisplay": 1512,
+      "ConsumptionIndicators": [ "2018-01-17T00:00:00", "2018-02-26T00:00:00", "2018-03-25T00:00:00" ]
+    },
+    {
+      "ApartmentNumber": 19,
+      "Address": "L. Ukrainki 9",
+      "Surname": "Ilnych",
+      "Deposit": 90.3,
+      "InputElectricityDisplay": 1211,
+      "OutputElectricityDisplay": 1512,
+      "ConsumptionIndicators": [ "2018-01-19T00:00:00", "2018-02-24T00:00:00", "2018-03-30T00:00:00" ]
+    }
+  ],
+  "PricePerKilowatt": 0.3
+}
