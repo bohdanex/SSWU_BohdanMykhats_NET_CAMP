@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-
-namespace Task_3
+﻿namespace Task_3
 {
     public class ElectricityManager
     {
