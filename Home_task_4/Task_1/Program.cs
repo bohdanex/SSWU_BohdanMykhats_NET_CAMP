@@ -6,6 +6,7 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             Console.WriteLine("Article about Africa");
             RunExampleEng();
             Console.WriteLine("\nСтаття про африку");

@@ -10,6 +10,13 @@ namespace Task_1
             {
                 new Point(28,18),
                 new Point(26,14),
+                new Point(22,18),
+                new Point(34,16),
+                new Point(24,15),
+                new Point(24,22),
+                new Point(32,22),
+                new Point(28,26),
+                new Point(23,21),
             };
             QuickShell fastShell = new QuickShell();
             QuickShell.FindPerimeter(points);
@@ -44,9 +51,23 @@ namespace Task_1
         {
             MinMaxPointIndexes(points, out int minIndex, out int maxIndex);
             SplitGraph(points, points[minIndex], points[maxIndex], out List<Point> leftGraph, out List<Point> rightGraph);
-            List<Point> rightGraphResultPoints = FindShellPoint(rightGraph, points[minIndex], points[maxIndex]);
-            List<Point> leftGraphResultPoints = FindShellPoint(leftGraph, points[minIndex], points[maxIndex]);
-            return 0;
+            List<Point> graphResult = FindShellPoint(leftGraph, points[minIndex], points[maxIndex]);
+            graphResult.AddRange(FindShellPoint(rightGraph, points[minIndex], points[maxIndex]));
+
+            graphResult.Sort((p1, p2) => p1.X.CompareTo(p2.X));
+            graphResult.Sort((p1, p2) => p1.Y.CompareTo(p2.Y));
+
+            double perimeter = 0;
+            int n = graphResult.Count;
+
+            for (int i = 0; i < n; i++)
+            {
+                Point p1 = graphResult[i];
+                Point p2 = graphResult[(i + 1) % n]; 
+                perimeter += Math.Sqrt(Math.Pow(p2.X - p1.X, 2) + Math.Pow(p2.Y - p1.Y, 2));
+            }
+
+            return perimeter;
         }
 
         private static void SplitGraph(List<Point> points, Point leftPoint, Point rightPoint, out List<Point> leftGraph, out List<Point> rightGraph)
@@ -149,42 +170,5 @@ namespace Task_1
         }
     }
 
-    public readonly record struct Point(int X, int Y)
-    {
-        public static bool operator >(Point left, Point right)
-        {
-            if(left.X > right.X && left.Y > right.Y)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public static bool operator <(Point left, Point right)
-        {
-            if (left.X < right.X && left.Y < right.Y)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public static bool operator >=(Point left, Point right)
-        {
-            if (left.X >= right.X && left.Y >= right.Y)
-            {
-                return true;
-            }
-            return false;
-        }
-
-        public static bool operator <=(Point left, Point right)
-        {
-            if (left.X <= right.X && left.Y <= right.Y)
-            {
-                return true;
-            }
-            return false;
-        }
-    }
+    public readonly record struct Point(int X, int Y);
 }
