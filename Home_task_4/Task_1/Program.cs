@@ -26,7 +26,7 @@ namespace Task_1
                 "in length—is shorter than that of Europe, because there are few inlets and few large bays or gulfs.");
             Console.WriteLine(sentenceExtractor);
         }
-        
+
         private static void RunExampleUkr()
         {
             SentenceExtractor sentenceExtractor = new("В античні часи не існувало єдиного топоніму для позначення сучасного материка Африка. " +
@@ -46,7 +46,5 @@ namespace Task_1
                 "намагались виводити топонім від власної богині Афродіти, або семітської Астарти (Іштар).");
             Console.WriteLine(sentenceExtractor);
         }
-
-
     }
 }

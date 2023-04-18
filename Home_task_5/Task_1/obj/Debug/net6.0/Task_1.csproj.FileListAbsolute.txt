@@ -1,0 +1,15 @@
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\bin\Debug\net6.0\Task_1.exe
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\bin\Debug\net6.0\Task_1.deps.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\bin\Debug\net6.0\Task_1.runtimeconfig.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\bin\Debug\net6.0\Task_1.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\bin\Debug\net6.0\Task_1.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.csproj.AssemblyReference.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.AssemblyInfoInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.AssemblyInfo.cs
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.csproj.CoreCompileInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\refint\Task_1.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\Task_1.genruntimeconfig.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_5\Task_1\obj\Debug\net6.0\ref\Task_1.dll

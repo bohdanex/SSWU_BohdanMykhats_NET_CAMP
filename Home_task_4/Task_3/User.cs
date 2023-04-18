@@ -72,7 +72,7 @@ namespace Task_3
             StringBuilder dates = new StringBuilder();
             foreach (DateTime date in ConsumptionIndicators)
             {
-                dates.Append($"{date.ToString("dd.MM.yyyy"),-30}");
+                dates.Append($"{date.ToString("dd.MM.yy"),-30}");
             }
 
             return $"{dates}|{ApartmentNumber, 9} | {Surname,-20}|";

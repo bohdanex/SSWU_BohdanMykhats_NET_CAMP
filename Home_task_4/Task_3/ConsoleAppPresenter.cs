@@ -33,7 +33,7 @@ namespace Task_3
                 if (electricityManager.ElectricityUsage is not null)
                 {
                     ElectricityUsage electricityUsage = electricityManager.ElectricityUsage;
-                    Console.WriteLine(electricityUsage.ToString("..", null));
+                    Console.WriteLine(electricityUsage.ToString(".", null));
 
                     Console.WriteLine("\nPrint by apartment (#12)\n");
                     try
