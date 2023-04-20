@@ -1,0 +1,4 @@
+﻿namespace Task_1
+{
+    public readonly record struct Point(int X, int Y);
+}
