@@ -10,9 +10,9 @@ namespace Task_2
     {
         public Box MainBox { get; private set; }
 
-        public Mall(Box boxes)
+        public Mall(Box box)
         {
-            MainBox = boxes;
+            MainBox = box;
         }
 
         public override string ToString()
