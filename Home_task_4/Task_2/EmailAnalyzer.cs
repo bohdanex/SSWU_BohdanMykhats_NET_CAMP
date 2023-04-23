@@ -29,7 +29,7 @@ namespace HomeTask4
                 string? domain;
 
                 SplitByAtSymbol(email, out localPart, out domain);
-                
+                // З continue працює, але не елегантно і не лаконічно.
                 if(String.IsNullOrEmpty(localPart) || String.IsNullOrEmpty(domain))
                 {
                     continue;
@@ -76,7 +76,7 @@ namespace HomeTask4
             {
                 return;
             }
-
+// Чим не влаштовував метод split?
             for (int charIndex = email.Length - 1; charIndex >= 0; --charIndex)
             {
                 if (email[charIndex] == '@')
