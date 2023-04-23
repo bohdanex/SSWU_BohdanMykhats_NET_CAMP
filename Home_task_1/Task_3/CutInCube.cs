@@ -1,7 +1,7 @@
 ﻿using System.Text;
 
 namespace FindCutInCube
-{
+{// Чудово! Такий підхід я і хотіла бачити.
     public class CutInCube
     {
         private bool[,,] _cube;
