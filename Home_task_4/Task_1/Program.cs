@@ -3,7 +3,8 @@
 namespace Task_1
 {
     internal class Program
-    {
+    {// Дуже завернуто. Спочатку я подумала, що код тільки викликає роздрук тексту. Але в констукторі викликається розв'язок задачі. Все правильно. Але я не прихильник такого варіанту.
+        //Це дискусійне питання!
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
