@@ -1,7 +1,7 @@
 ﻿using System.Text;
 
 namespace HomeTask4
-{
+{// 
     public class EmailAnalyzer
     {
         public string[] CorrectEmails { get; private set; }
