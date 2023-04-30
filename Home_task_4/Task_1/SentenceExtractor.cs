@@ -34,6 +34,7 @@ namespace Task3
         {
             const string punctuationMarks = ".?!";
             List<int> occuredSentanceInBracketsIndeces = new();
+            // Тут занадто "важка" конструкція, в якій Ви не використовуєте її можливості....
             Dictionary<char, char> bracketPairs = new()
             {
                 {'(', ')'},
@@ -59,6 +60,7 @@ namespace Task3
                                 {
                                     occuredSentanceInBracketsIndeces.Add(sentenceIndex);
                                     //пропустити подальшу перевірку символу з колекції
+                                    // Не рекомендовано!!!!
                                     goto nextSentence;
                                 }
                             }

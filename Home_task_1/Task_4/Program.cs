@@ -1,7 +1,7 @@
 ﻿namespace Tensor
 {
     internal class Program
-    {
+    {// Але я не зможу задати таку конструкцію int[,] a; Tensor t=a; Xb
         static void Main(string[] args)
         {
             try

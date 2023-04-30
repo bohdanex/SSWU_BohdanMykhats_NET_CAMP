@@ -1,7 +1,7 @@
 ﻿using System.Text;
 
 namespace Task_1
-{
+{\\ цікаво б дізнатись, чому обрали саме цей алгоритм. Напишіть в приват.
     public class QuickShellPerimeter
     {
         private Point[] _points;
