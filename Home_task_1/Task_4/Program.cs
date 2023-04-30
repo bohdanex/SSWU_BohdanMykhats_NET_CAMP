@@ -8,6 +8,7 @@
             {
                 //Ініціалізація тензора як тривимірної матриці (тензор рангу 3)
                 Tensor tensor = new(3, 3,5,7);
+                tensor = 2;
                 tensor.FillWithRandom();
                 Console.WriteLine(tensor);
 
@@ -24,7 +25,15 @@
 
                 //Спроба наткнутися на виняток
                 Console.WriteLine("Trying to change tensor rank...");
-                tensor.SetTensorRank(rank:3);
+                tensor.SetTensorRank(1, 2 );
+                
+
+                Tensor tensor2 = new(1, 3);
+                tensor2[1] = 2;
+                tensor2[0] = 1;
+                Console.WriteLine(tensor2);
+
+                Tensor zero = new(0);
             }
             catch(InvalidDataException e)
             {

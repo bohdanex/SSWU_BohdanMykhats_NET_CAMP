@@ -117,6 +117,10 @@ namespace Tensor
         public override string ToString()
         {
             StringBuilder sb = new();
+            if(_rank == 0)
+            {
+                return this[0].ToString();
+            }
             for (int i = 0; i < _tensor.Length; ++i)
             {
                 sb.Append($"{_tensor[i],-4} ");
