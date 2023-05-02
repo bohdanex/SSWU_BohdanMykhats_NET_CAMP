@@ -8,7 +8,7 @@
             int[][] sourceArray = arraysOfIntegers;
             const int intSize = sizeof(int);
             int[] destArray = Array.Empty<int>();
-
+// краще відразу виділити сумарну пам'ять під результат, а не використовувати метод Resize на кожному кроці.
             foreach (int[] array in sourceArray)
             {
                 int destArraysSize = destArray.Length;
@@ -17,7 +17,7 @@
             }
 
             Array.Sort(destArray);
-
+// про ефективність на занятті!
             foreach (int item in destArray)
             {
                 yield return item;
