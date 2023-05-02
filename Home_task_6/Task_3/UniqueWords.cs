@@ -1,5 +1,5 @@
 ﻿namespace Task_3
-{
+{//Сумарний бал -95
     public static class UniqueWords
     {
         public static IEnumerable<string> UnifyWords(string text)
