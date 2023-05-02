@@ -11,6 +11,7 @@
             for(int wordIndex = 1; wordIndex < allWords.Length; ++wordIndex)
             {
                 bool isUnique = true;
+                // А множиною скористатись?
                 for (int j = wordIndex - 1; j >= 0 ; --j)
                 {
                     if (allWords[wordIndex].Equals(allWords[j], StringComparison.InvariantCultureIgnoreCase))
