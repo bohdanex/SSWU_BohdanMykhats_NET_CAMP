@@ -6,7 +6,7 @@
         {
             char[] splitChars = { ' ', ',', '.', '!', '?', '\n'};
             string[] allWords = text.Split(splitChars, options: StringSplitOptions.RemoveEmptyEntries);
-
+            
             yield return allWords[0];
             for(int wordIndex = 1; wordIndex < allWords.Length; ++wordIndex)
             {
@@ -24,6 +24,19 @@
                 {
                     yield return allWords[wordIndex];
                 }
+            }
+        }
+
+        public static IEnumerable<string> UnifyWords2(string text)
+        {
+            char[] splitChars = { ' ', ',', '.', '!', '?', '\n' };
+            string[] allWords = text.Split(splitChars, options: StringSplitOptions.RemoveEmptyEntries);
+
+            HashSet<string> strings = new HashSet<string>(allWords);
+            
+            foreach (string word in allWords)
+            {
+                yield return word;
             }
         }
     }

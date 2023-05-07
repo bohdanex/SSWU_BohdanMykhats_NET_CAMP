@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace Task_2
+﻿namespace Task_2
 {
     internal class Program
     {

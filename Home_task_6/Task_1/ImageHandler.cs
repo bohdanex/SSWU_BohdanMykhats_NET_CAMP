@@ -26,39 +26,6 @@ namespace Task_1
             Matrix= matrix;
         }
 
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return new SnakeImageEnumerator(_matrix);
-        }
-
-        public IEnumerator<int> GetEnumerator()
-        {
-            return new SnakeImageEnumerator(_matrix);
-        }
-
-        public void UpdateMatrix(int[,] matrix)
-        {
-            Matrix = matrix;
-        }
-
-        public override string ToString()
-        {
-            StringBuilder output = new StringBuilder();
-            int matrixLength = Matrix.GetLength(0);
-
-            output.AppendLine($"Matrix size: {matrixLength}x{matrixLength}");
-
-            for (int i = 0; i < matrixLength; ++i)
-            {
-                for (int j = 0; j < matrixLength; j++)
-                {
-                    output.Append($"{_matrix[i, j],-3}");
-                }
-                output.AppendLine();
-            }
-            return output.ToString();
-        }
-
         private class SnakeImageEnumerator : IEnumerator<int>
         {
             private int[,] _matrix;
@@ -125,6 +92,39 @@ namespace Task_1
                 hasMovedByDiag = default;
                 moveDiag = default;
             }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return new SnakeImageEnumerator(_matrix);
+        }
+
+        public IEnumerator<int> GetEnumerator()
+        {
+            return new SnakeImageEnumerator(_matrix);
+        }
+
+        public void UpdateMatrix(int[,] matrix)
+        {
+            Matrix = matrix;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder output = new StringBuilder();
+            int matrixLength = Matrix.GetLength(0);
+
+            output.AppendLine($"Matrix size: {matrixLength}x{matrixLength}");
+
+            for (int i = 0; i < matrixLength; ++i)
+            {
+                for (int j = 0; j < matrixLength; j++)
+                {
+                    output.Append($"{_matrix[i, j],-3}");
+                }
+                output.AppendLine();
+            }
+            return output.ToString();
         }
     }
 }

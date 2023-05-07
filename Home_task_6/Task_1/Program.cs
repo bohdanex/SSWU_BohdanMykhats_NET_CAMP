@@ -1,4 +1,7 @@
-﻿namespace Task_1
+﻿using System.Collections;
+using System.Collections.Concurrent;
+
+namespace Task_1
 {
     internal class Program
     {
