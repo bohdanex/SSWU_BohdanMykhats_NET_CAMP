@@ -2,12 +2,16 @@
 {
     public abstract class TrafficLight : IFormattable
     {
-        public abstract TrafficLightIndicator[] TrafficLightIndicators { get; set; }
+        protected TimeSpan timer;
+        protected int activeIndicatorIndex;
+
+        public abstract TrafficLightIndicator[] TrafficLightIndicators { get; init; }
+        public abstract Direction Position { get; init; }
 
         public abstract void Start();
         public abstract void Reboot();
 
-        public abstract void AddParticipant(MovementParticipantVehicular participant);
+        public abstract void AddParticipant(MovementParticipant participant);
 
         protected static class IndicatorVerifier
         {

@@ -6,9 +6,7 @@ namespace Home_task_7
     public sealed class TrafficLightVehicular : TrafficLight, IFormattable
     {
         private event Action<Direction>? IndicatorSwitched;
-        private int activeIndicatorIndex;
-        private Queue<MovementParticipantVehicular> participants;
-        private TimeSpan timer;
+        private Queue<MovementParticipant> participants;
         private bool incrementIndex;
 
         public TrafficLightVehicular(Direction position, TrafficLightIndicator[] trafficLightIndicators, IEnumerable participants)
@@ -18,14 +16,14 @@ namespace Home_task_7
 
             Reboot();
 
-            foreach (MovementParticipantVehicular participant in participants)
+            foreach (MovementParticipant participant in participants)
             {
                 AddParticipant(participant);
             }
         }
 
-        public override TrafficLightIndicator[] TrafficLightIndicators { get; set; }
-        public Direction Position { get; init; }
+        public override TrafficLightIndicator[] TrafficLightIndicators { get; init; }
+        public override Direction Position { get; init; }
 
         private void SwitchIndicatorActivity()
         {
@@ -49,7 +47,7 @@ namespace Home_task_7
             if(participants.Count > 0)
             {
                 IndicatorSwitched?.Invoke(TrafficLightIndicators[activeIndicatorIndex].DirectionTo);
-                MovementParticipantVehicular firstParticipant = participants.Peek();
+                MovementParticipant firstParticipant = participants.Peek();
                 if (firstParticipant.Intension == TrafficLightIndicators[activeIndicatorIndex].DirectionTo)
                 {
                     IndicatorSwitched -= firstParticipant.ReactToIndicator;
@@ -87,25 +85,25 @@ namespace Home_task_7
             timer = TrafficLightIndicators[activeIndicatorIndex].Duration;
         }
 
-        public override void AddParticipant(MovementParticipantVehicular participant)
+        public override void AddParticipant(MovementParticipant participant)
         {
-            MovementParticipantVehicular clonedParticipant = (MovementParticipantVehicular)participant.Clone();
+            MovementParticipant clonedParticipant = (MovementParticipant)participant.Clone();
 
             if (clonedParticipant.CurrentDirection != Position)
             {
                 return;
             }
 
-            bool mathchFinalDirection = false; 
+            bool matchFinalDirection = false; 
             foreach (TrafficLightIndicator indicator in TrafficLightIndicators)
             {
                 if(clonedParticipant.Intension == indicator.DirectionTo)
                 {
-                    mathchFinalDirection = true;
+                    matchFinalDirection = true;
                 }
             }
 
-            if (!mathchFinalDirection)
+            if (!matchFinalDirection)
             {
                 return;
             }

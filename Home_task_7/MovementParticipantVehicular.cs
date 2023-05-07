@@ -19,10 +19,8 @@
         }
 
         public Guid Id { get; init; }
-        //поточна позиція може змінюватися відносно перехрестя під час руху
-        public Direction CurrentDirection { get; set; }
-        //Учасник руху може захотіти змінити намір в любий момент часу
-        public Direction Intension { get; set; }
+        public override Direction CurrentDirection { get; set; }
+        public override Direction Intension { get; set; }
         public bool IsMoving { get; private set; }
 
         public override void ReactToIndicator(Direction direction)
@@ -65,7 +63,7 @@
             return $"Id = {guid}..., current direction: {CurrentDirection.TranslateToUkrainian()}, intension: {Intension.TranslateToUkrainian()}, is moving? {IsMoving}";
         }
 
-        public object Clone()
+        public override object Clone()
         {
             return MemberwiseClone();
         }

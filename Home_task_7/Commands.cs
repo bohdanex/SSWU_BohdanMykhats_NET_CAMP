@@ -7,6 +7,6 @@
         Abort = 2,
         Pause = 3,
         Reset = 4,
-        ChangeRooles = 5,
+        ChangeRules = 5,
     }
 }

@@ -8,12 +8,11 @@ namespace Home_task_7
         private TimeSpan timer;
         private readonly IEnumerable<MovementParticipant> participants;
 
-        public CrossingRoadSimulator(IEnumerable<MovementParticipant> movementParticipants)
+        public CrossingRoadSimulator(MovementParticipant[] movementParticipants, TrafficLight[] trafficLights)
         {
-            participants = movementParticipants;
             timer = TimeSpan.FromSeconds(0);
-            TrafficLights = Array.Empty<TrafficLight>();
-            SetDefaults();
+            participants = (MovementParticipant[])movementParticipants.Clone();
+            TrafficLights = CrossingVerifier.VerifyTrafficLightCount(trafficLights);
         }
 
         public TrafficLight[] TrafficLights { get; private set; }
@@ -69,9 +68,10 @@ namespace Home_task_7
                     }
                 }
 
-                if (command is Command.ChangeRooles)
+                if (command is Command.ChangeRules)
                 {
                     isPaused = true;
+                    Thread.CurrentThread.Join(1000);
                     for (int i = 0; i < TrafficLights[0].TrafficLightIndicators.Length; ++i)
                     {
                         TimeSpan timeSpan = GetSeconds($"Встановіть значення для індикатора {TrafficLights[0].TrafficLightIndicators[i].Color} кольору ");
@@ -91,43 +91,9 @@ namespace Home_task_7
             }
         }
 
-        public void SetDefaults()
+        public void SetTrafficLights(TrafficLight[] trafficLights)
         {
-            TrafficLightIndicator[] indicatorsToEast =
-            {
-                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), false),
-                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2), false),
-                new(IndicatorColor.Green, Direction.East, TimeSpan.FromSeconds(20), true),
-            };
-
-            TrafficLightIndicator[] indicatorsToWest =
-            {
-                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), false),
-                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2), false),
-                new(IndicatorColor.Green, Direction.West, TimeSpan.FromSeconds(20), true),
-            };
-            
-            TrafficLightIndicator[] indicatorsToNorth =
-            {
-                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), true),
-                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2), false),
-                new(IndicatorColor.Green, Direction.North, TimeSpan.FromSeconds(20), false),
-            };
-
-            TrafficLightIndicator[] indicatorsToSouth =
-            {
-                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), true),
-                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2),false),
-                new(IndicatorColor.Green, Direction.South, TimeSpan.FromSeconds(20), false),
-            };
-
-            TrafficLights = new TrafficLightVehicular[]
-            {
-                new(Direction.West, indicatorsToEast, participants),
-                new(Direction.East, indicatorsToWest, participants),
-                new(Direction.South, indicatorsToNorth, participants),
-                new(Direction.North, indicatorsToSouth, participants),
-            };
+            TrafficLights = CrossingVerifier.VerifyTrafficLightCount(trafficLights);
         }
 
         public override string ToString()
@@ -137,7 +103,7 @@ namespace Home_task_7
 
         protected static class CrossingVerifier
         {
-            public static TrafficLightVehicular[] VerifyTraficLightCount(TrafficLightVehicular[] trafficLights, byte count = 4)
+            public static TrafficLight[] VerifyTrafficLightCount(TrafficLight[] trafficLights, byte count = 4)
             {
                 if (trafficLights.Length != count)
                 {

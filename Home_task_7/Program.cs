@@ -2,20 +2,20 @@
 {
     internal class Program
     {
-        private static void Main()
-        {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-
-            try
-            {
-                MovementParticipant[] participants =
+        private static MovementParticipant[] participants =
                 {
                     new MovementParticipantVehicular(Guid.NewGuid(), Direction.West, Direction.East, false),
                     new MovementParticipantVehicular(Guid.NewGuid(), Direction.West, Direction.East, false),
                     new MovementParticipantVehicular(Guid.NewGuid(), Direction.West, Direction.East, true),
                 };
 
-                CrossingRoadSimulator simulator = new(participants);
+        private static void Main()
+        {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            try
+            {
+                CrossingRoadSimulator simulator = new(participants, GetMockTraffic());
                 simulator.Simulate(StartMessage, ReadCommand, CurrentInfo, GetSeconds);
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@
                 ConsoleKey.Enter => Command.Start,
                 ConsoleKey.A => Command.Abort,
                 ConsoleKey.P => Command.Pause,
-                ConsoleKey.Spacebar => Command.ChangeRooles,
+                ConsoleKey.Spacebar => Command.ChangeRules,
                 _ => Command.None
             };
         }
@@ -53,15 +53,54 @@
 
         private static TimeSpan GetSeconds(string message)
         {
-            Console.Write(message);
-            int dataFromConsole = 0;
-
-            while (dataFromConsole < 2)
+            int dataFromConsole;
+            do
             {
+                Console.Write(message);
                 dataFromConsole = Int32.Parse(Console.ReadLine()!);
             }
+            while (dataFromConsole < 2);
 
             return TimeSpan.FromSeconds(dataFromConsole);
+        }
+
+        private static TrafficLight[] GetMockTraffic()
+        {
+            TrafficLightIndicator[] indicatorsToEast =
+            {
+                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), false),
+                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2), false),
+                new(IndicatorColor.Green, Direction.East, TimeSpan.FromSeconds(20), true),
+            };
+
+            TrafficLightIndicator[] indicatorsToWest =
+            {
+                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), false),
+                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2), false),
+                new(IndicatorColor.Green, Direction.West, TimeSpan.FromSeconds(20), true),
+            };
+
+            TrafficLightIndicator[] indicatorsToNorth =
+            {
+                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), true),
+                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2), false),
+                new(IndicatorColor.Green, Direction.North, TimeSpan.FromSeconds(20), false),
+            };
+
+            TrafficLightIndicator[] indicatorsToSouth =
+            {
+                new(IndicatorColor.Red, Direction.None, TimeSpan.FromSeconds(20), true),
+                new(IndicatorColor.Yellow, Direction.None, TimeSpan.FromSeconds(2),false),
+                new(IndicatorColor.Green, Direction.South, TimeSpan.FromSeconds(20), false),
+            };
+
+            return new TrafficLightVehicular[]
+            {
+                new(Direction.West, indicatorsToEast, participants),
+                new(Direction.East, indicatorsToWest, participants),
+                new(Direction.South, indicatorsToNorth, participants),
+                new(Direction.North, indicatorsToSouth, participants),
+            };
         }
     }
 }

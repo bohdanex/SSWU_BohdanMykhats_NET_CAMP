@@ -26,7 +26,7 @@
                 IndicatorColor.Red => "Червоний",
                 IndicatorColor.Yellow => "Жовтий",
                 IndicatorColor.Green => "Зелений",
-                _ => "Невизначено"
+                _ => "Не визначено"
             };
         }
 
