@@ -2,7 +2,7 @@
 using System.Text;
 
 namespace Task_1
-{
+{// покажіть цю роботу на занятті.
     public class ImageHandler : IEnumerable<int>
     {
         private int[,] _matrix;
