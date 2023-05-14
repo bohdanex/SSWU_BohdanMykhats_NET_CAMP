@@ -6,12 +6,10 @@ namespace Home_task_7
     public class CrossingRoadSimulator
     {
         private TimeSpan timer;
-        private readonly IEnumerable<MovementParticipant> participants;
 
-        public CrossingRoadSimulator(MovementParticipant[] movementParticipants, TrafficLight[] trafficLights)
+        public CrossingRoadSimulator(TrafficLight[] trafficLights)
         {
             timer = TimeSpan.FromSeconds(0);
-            participants = (MovementParticipant[])movementParticipants.Clone();
             TrafficLights = CrossingVerifier.VerifyTrafficLightCount(trafficLights);
         }
 
@@ -38,7 +36,7 @@ namespace Home_task_7
                         {
                             firstRow.Append($"{light,23:direction}|");
                             secondRow.Append($"{" ",6}{light,-17:color}|");
-                            light.Start();
+                            light.TriggerTimer();
                         }
 
                         secondRow.Append('\n' + new string('-', 108));
@@ -89,11 +87,6 @@ namespace Home_task_7
                     isPaused = false;
                 }
             }
-        }
-
-        public void SetTrafficLights(TrafficLight[] trafficLights)
-        {
-            TrafficLights = CrossingVerifier.VerifyTrafficLightCount(trafficLights);
         }
 
         public override string ToString()

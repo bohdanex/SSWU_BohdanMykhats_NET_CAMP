@@ -6,22 +6,11 @@ namespace Home_task_7
     public sealed class TrafficLightVehicular : TrafficLight, IFormattable
     {
         private event Action<Direction>? IndicatorSwitched;
-        private Queue<MovementParticipant> participants;
         private bool incrementIndex;
-
-        public TrafficLightVehicular(Direction position, TrafficLightIndicator[] trafficLightIndicators, IEnumerable participants)
-        {
-            Position = position;
-            TrafficLightIndicators = (TrafficLightIndicator[])IndicatorVerifier.VerifyIndicatorCount(trafficLightIndicators).Clone();
-
-            Reboot();
-
-            foreach (MovementParticipant participant in participants)
-            {
-                AddParticipant(participant);
-            }
-        }
-
+#pragma warning disable 8618
+        public TrafficLightVehicular(Direction position, TrafficLightIndicator[] trafficLightIndicators)
+        : base(position, trafficLightIndicators) { }
+#pragma warning restore
         public override TrafficLightIndicator[] TrafficLightIndicators { get; init; }
         public override Direction Position { get; init; }
 
@@ -38,23 +27,14 @@ namespace Home_task_7
                 TrafficLightIndicators[i].IsActive = false;
             }
 
+            IndicatorSwitched?.Invoke(TrafficLightIndicators[activeIndicatorIndex].DirectionTo);
+
             TrafficLightIndicators[activeIndicatorIndex].IsActive = true;
             timer = TrafficLightIndicators[activeIndicatorIndex].Duration;
         }
 
-        public override void Start()
+        public override void TriggerTimer()
         {
-            if(participants.Count > 0)
-            {
-                IndicatorSwitched?.Invoke(TrafficLightIndicators[activeIndicatorIndex].DirectionTo);
-                MovementParticipant firstParticipant = participants.Peek();
-                if (firstParticipant.Intension == TrafficLightIndicators[activeIndicatorIndex].DirectionTo)
-                {
-                    IndicatorSwitched -= firstParticipant.ReactToIndicator;
-                    participants.Dequeue();
-                }
-            }
-            
             timer -= TimeSpan.FromSeconds(1);
             if(timer <= TimeSpan.FromSeconds(0))
             {
@@ -64,7 +44,6 @@ namespace Home_task_7
 
         public override void Reboot()
         {
-            participants = new();
             activeIndicatorIndex = 0;
             incrementIndex = true;
 
@@ -85,36 +64,16 @@ namespace Home_task_7
             timer = TrafficLightIndicators[activeIndicatorIndex].Duration;
         }
 
-        public override void AddParticipant(MovementParticipant participant)
-        {
-            MovementParticipant clonedParticipant = (MovementParticipant)participant.Clone();
-
-            if (clonedParticipant.CurrentDirection != Position)
-            {
-                return;
-            }
-
-            bool matchFinalDirection = false; 
-            foreach (TrafficLightIndicator indicator in TrafficLightIndicators)
-            {
-                if(clonedParticipant.Intension == indicator.DirectionTo)
-                {
-                    matchFinalDirection = true;
-                }
-            }
-
-            if (!matchFinalDirection)
-            {
-                return;
-            }
-
-            IndicatorSwitched += clonedParticipant.ReactToIndicator;
-            participants.Enqueue(clonedParticipant);
-        }
-
         public override string ToString()
         {
             return Position.ToString();
+        }
+
+        //принцип Барбари Лісков (коваріантність) - повертається більш
+        //конкретний тип (не TrafficLight, а TrafficLightVehicular) 
+        public override object Clone()
+        {
+            return new TrafficLightVehicular(Position, (TrafficLightIndicator[])TrafficLightIndicators.Clone());
         }
 
         public override string ToString(string? format, IFormatProvider? provider)

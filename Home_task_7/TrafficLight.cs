@@ -1,17 +1,22 @@
 ﻿namespace Home_task_7
 {
-    public abstract class TrafficLight : IFormattable
+    public abstract class TrafficLight : IFormattable, ICloneable
     {
         protected TimeSpan timer;
         protected int activeIndicatorIndex;
 
+        public TrafficLight(Direction position, TrafficLightIndicator[] trafficLightIndicators)
+        {
+            Position = position;
+            TrafficLightIndicators = (TrafficLightIndicator[])trafficLightIndicators.Clone();
+            Reboot();
+        }
+
         public abstract TrafficLightIndicator[] TrafficLightIndicators { get; init; }
         public abstract Direction Position { get; init; }
 
-        public abstract void Start();
+        public abstract void TriggerTimer();
         public abstract void Reboot();
-
-        public abstract void AddParticipant(MovementParticipant participant);
 
         protected static class IndicatorVerifier
         {
@@ -26,6 +31,7 @@
             }
         }
 
+        public abstract object Clone();
         public abstract string ToString(string? format, IFormatProvider? provider);
     }
 }

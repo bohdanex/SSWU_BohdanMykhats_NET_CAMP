@@ -1,0 +1,15 @@
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\bin\Debug\net6.0\CrossRoads.exe
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\bin\Debug\net6.0\CrossRoads.deps.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\bin\Debug\net6.0\CrossRoads.runtimeconfig.json
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\bin\Debug\net6.0\CrossRoads.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\bin\Debug\net6.0\CrossRoads.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.csproj.AssemblyReference.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.AssemblyInfoInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.AssemblyInfo.cs
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.csproj.CoreCompileInputs.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\refint\CrossRoads.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.pdb
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\CrossRoads.genruntimeconfig.cache
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Task_1\obj\Debug\net6.0\ref\CrossRoads.dll
