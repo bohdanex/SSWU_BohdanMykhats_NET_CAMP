@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CrossRoads.Factory.IntersectionFactory">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAABAAAAAAAAAAAAAwAEEAAAAAQAAAAA=</HashCode>
+      <FileName>IntersectionFactory\IntersectionFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossRoads.Factory.IntersectionFactoryVehicular">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAABAAAAAAAAAAAAAAAEEAAAAAAAAAAA=</HashCode>
+      <FileName>IntersectionFactory\IntersectionFactoryVehicular.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossRoads.CrossingRoadSimulator">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAEAAABAAAAAAAAEAAAAAAAAAIgAAA=</HashCode>
+      <FileName>CrossingRoadSimulator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossRoads.EnumTranslator">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Indicator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossRoads.Intersection" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="CrossRoads.Intersection.Verifier" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Intersection.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAACAABAAAAEAAAAAAEAAAAAAAAABA=</HashCode>
+      <FileName>Intersection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.Lane" BaseTypeListCollapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAQAQAAAAAAAJA=</HashCode>
+      <FileName>Lane.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.MovementParticipant">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAACAAAAAAAAEAQAAAQAIAAAAAAAABA=</HashCode>
+      <FileName>MovementParticipant.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.MovementParticipantVehicular">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAAAGAAAAAAAAEAQAAAUAIAAAAAAAABA=</HashCode>
+      <FileName>MovementParticipantVehicular.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.ObjectClonerExtension">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ObjectClonerExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossRoads.Program">
+    <Position X="13.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAACAAAAAABAQABgA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossRoads.Road" BaseTypeListCollapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAAAAAAIAABA=</HashCode>
+      <FileName>Road.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.TrafficLight">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="CrossRoads.TrafficLight.IndicatorVerifier" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>TrafficLight.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQEAAACACAAAAAEAAAAAAAAAAIAAAAEAAAAAAAAABA=</HashCode>
+      <FileName>TrafficLight.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.TrafficLightIndicator" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAEEAAAAAAAAAAAAAAAAQAAgAAAABA=</HashCode>
+      <FileName>TrafficLightIndicator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CrossRoads.TrafficLightVehicular">
+    <Position X="1" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACgAAAAEAAAAAAAAAAoAAAAEAAAAAAAAABA=</HashCode>
+      <FileName>TrafficLightVehicular.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="CrossRoads.Command">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAABCAAAAAAAAAAAAAgAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Commands.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CrossRoads.IndicatorColor">
+    <Position X="11.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAADAAAAA=</HashCode>
+      <FileName>Indicator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CrossRoads.Direction">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAEBAAQ=</HashCode>
+      <FileName>Indicator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
