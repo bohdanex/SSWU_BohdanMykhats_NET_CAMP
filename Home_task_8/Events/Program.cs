@@ -46,6 +46,7 @@
         public void AddSubscriber(EventHandler handler)
         {
             SwitchLight += handler;
+            
         }
 
         public void TriggerTimer()
