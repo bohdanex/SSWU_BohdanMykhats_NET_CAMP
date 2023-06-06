@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Task_1\\CrossRoads.csproj": {}
+    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Program\\CrossRoads.csproj": {}
   },
   "projects": {
-    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Task_1\\CrossRoads.csproj": {
+    "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Program\\CrossRoads.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Task_1\\CrossRoads.csproj",
+        "projectUniqueName": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Program\\CrossRoads.csproj",
         "projectName": "CrossRoads",
-        "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Task_1\\CrossRoads.csproj",
+        "projectPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Program\\CrossRoads.csproj",
         "packagesPath": "C:\\Users\\bodat\\.nuget\\packages\\",
-        "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Task_1\\obj\\",
+        "outputPath": "C:\\DevTools\\vs_projects\\SSWU_BohdanMykhats_NET_CAMP\\Home_task_8\\Program\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bodat\\AppData\\Roaming\\NuGet\\NuGet.Config",
