@@ -11,7 +11,7 @@ namespace Task_2
         private static void Main(string[] args)
         {
             Random rnd = new Random();
-            int[] ints = new int[9].Select(n => rnd.Next(100)).ToArray();
+            int[] ints = new int[100].Select(n => rnd.Next(100)).ToArray();
 
             string path = Path.Combine(@"C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_11\Task_2",
                 "root", "mainSequence.txt");

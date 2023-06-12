@@ -5,6 +5,8 @@ using System.Linq;
 
 namespace Task_2
 {
+    //У цій програмі можна явно вказувати який максимальний об'єм пам'яті доступний для використання.
+    //В залежності від цього значення буде генеруватися різна кількість тимчасових файлів
     public static class MergeSorter
     {
         public static int[] MergeSort(this int[] ints)
@@ -68,7 +70,7 @@ namespace Task_2
             }
         }
 
-        public static void SplitByMaxSize(string filePath, int elementCount = 9, int maxMemorySize = 3)
+        public static void SplitByMaxSize(string filePath, int elementCount = 100, int maxMemorySize = 50)
         {
             using TextReader reader = new StreamReader(filePath);
             int countIndex = 0;
@@ -95,10 +97,8 @@ namespace Task_2
             }
         }
 
-        public static void MergeSortToFile(string filePath, int elementCount = 10, int maxMemorySize = 3)
+        public static void MergeSortToFile(string filePath, int elementCount = 100, int maxMemorySize = 50)
         {
-
-
             int sourceIndex = 0;
             string rootFolder = filePath[..^Path.GetFileName(filePath).Length];
 
