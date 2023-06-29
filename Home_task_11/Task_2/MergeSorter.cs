@@ -70,7 +70,7 @@ namespace Task_2
             }
         }
 
-        public static void SplitByMaxSize(string filePath, int elementCount = 100, int maxMemorySize = 50)
+        public static void SplitByMaxSize(string filePath, int elementCount = 100, int maxMemorySize = 30)
         {
             using TextReader reader = new StreamReader(filePath);
             int countIndex = 0;
@@ -97,7 +97,7 @@ namespace Task_2
             }
         }
 
-        public static void MergeSortToFile(string filePath, int elementCount = 100, int maxMemorySize = 50)
+        public static void MergeSortToFile(string filePath, int elementCount = 100, int maxMemorySize = 30)
         {
             int sourceIndex = 0;
             string rootFolder = filePath[..^Path.GetFileName(filePath).Length];
@@ -138,7 +138,7 @@ namespace Task_2
 
             for (int i = 0; i < elementCount / maxMemorySize; ++i)
             {
-                File.Delete(rootFolder + $"temp_{i}.txt");
+                //File.Delete(rootFolder + $"temp_{i}.txt");
             }
         }
 

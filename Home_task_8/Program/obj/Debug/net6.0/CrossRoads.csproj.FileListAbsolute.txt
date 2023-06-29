@@ -28,3 +28,5 @@ C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Program\obj\Debu
 C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Program\obj\Debug\net6.0\CrossRoads.pdb
 C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Program\obj\Debug\net6.0\CrossRoads.genruntimeconfig.cache
 C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Program\obj\Debug\net6.0\ref\CrossRoads.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Program\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\DevTools\vs_projects\SSWU_BohdanMykhats_NET_CAMP\Home_task_8\Program\obj\Debug\net6.0\CrossRoads.csproj.CopyComplete

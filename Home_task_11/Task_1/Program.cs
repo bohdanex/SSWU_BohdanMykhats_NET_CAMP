@@ -11,6 +11,7 @@ namespace SSWU.HomeTask11
         {
             int[] ints = { 2,462,1,3,5,742,9,6,8,654,2,0,-15,2,7,1,-5123 };
             ints.QuickSort(0).Print();
+            ints.QuickSort(8).Print();
 
             "hello world a jkl bc asdasfq".Replace(" ", "").ToList().QuickSort(4).Print();
         }

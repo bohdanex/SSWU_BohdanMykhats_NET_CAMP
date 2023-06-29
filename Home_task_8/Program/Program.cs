@@ -1,4 +1,7 @@
 ﻿using CrossRoads.Factory;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CrossRoads
 {
@@ -6,20 +9,63 @@ namespace CrossRoads
     {
         private static void Main()
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //MyClass myClass = new MyClass() { Id = 1, Name = "Mykola" };
+            //Type myClassType = typeof(MyClass);
+            //const string path = @"../../../myClass.txt";
 
-            try
+            //using Stream stream = File.OpenWrite(path);
+
+            //BinaryFormatter bf = new BinaryFormatter();
+            //bf.Serialize(stream, myClass);
+
+            //stream.Close();
+
+            //MyClass myClassDeserealized = (MyClass)bf.Deserialize(File.OpenRead(path));
+            //Console.WriteLine(myClass);
+            //MyClass myClass = new MyClass() { Id = 1, Name = "Mykola" };
+            //string jsonMyClass = JsonConvert.SerializeObject(myClass);
+            //MyClass fromJson = JsonConvert.DeserializeObject<MyClass>(jsonMyClass);
+            //Console.WriteLine(fromJson);
+
+            MyClass[] myClasses =
             {
-                IntersectionFactory intersectionFactory1 = new IntersectionFactoryVehicular();
-                IntersectionFactory intersectionFactory2 = new IntersectionFactoryVehicular();
-                
-                CrossingRoadSimulator simulator = new(intersectionFactory1, intersectionFactory2);
-                simulator.Simulate(StartMessage, ReadCommand, CurrentInfo, SetTimer);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-            }
+                new(){ Id = 1, Name = "Class1" },
+                new(){ Id = 2, Name = "Class2" },
+                new(){ Id = 3, Name = "Class3" },
+                new(){ Id = 4, Name = "Class4" },
+            };
+
+            MyClassCollection classCollection = new(myClasses);
+            classCollection.Deserealize(classCollection.JsonSerialized());
+
+            string test = JsonConvert.SerializeObject(classCollection);
+            Console.WriteLine(test);
+            Console.WriteLine(classCollection);
+
+            string collectionAsJson = JsonConvert.SerializeObject(classCollection);
+            Console.WriteLine(collectionAsJson);
+
+            MyClassCollection collectionFromJson = JsonConvert.DeserializeObject<MyClassCollection>(collectionAsJson);
+            Console.WriteLine(collectionFromJson);
+
+
+
+
+
+            //Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            //try
+            //{
+            //    IntersectionFactory intersectionFactory1 = new IntersectionFactoryVehicular();
+            //    IntersectionFactory intersectionFactory2 = new IntersectionFactoryVehicular();
+
+            //    CrossingRoadSimulator simulator = new(intersectionFactory1, intersectionFactory2);
+            //    simulator.Simulate(StartMessage, ReadCommand, CurrentInfo, SetTimer);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex);
+            //}
         }
 
         private static void StartMessage()

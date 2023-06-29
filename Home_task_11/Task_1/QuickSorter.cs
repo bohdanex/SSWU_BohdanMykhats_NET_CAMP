@@ -10,7 +10,7 @@ namespace SSWU.HomeTask11
         {
             if(pivot < 0)
             {
-                throw new ArgumentOutOfRangeException("You can not use negative values for the pivot");
+                throw new ArgumentOutOfRangeException("Wrong pivot");
             }
 
             if (collection.Count <= 1) return collection;
